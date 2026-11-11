@@ -1,3 +1,4 @@
+import WhatsAppButton from "./WhatsAppButton";
 
 export const dynamic = "force-dynamic";
 
@@ -37,6 +38,7 @@ export default async function RootLayout({
           <Footer />
         </SessionProvider>
         
+  <WhatsAppButton />
 </body>
     </html>
   );
