@@ -23,7 +23,7 @@ const Footer = () => {
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <Image
               src="/logo v1.png"
-              alt="Singitronic logo"
+              alt="Zixlima logo"
               width={250}
               height={250}
               className="h-auto w-auto"
