@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import prisma from "@/utils/db";
 import bcrypt from "bcryptjs";
 import { nanoid } from "nanoid";
