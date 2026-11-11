@@ -1,6 +1,6 @@
-export const dynamic = 'force-dynamic';
-
 "use client";
+export const dynamic = "force-dynamic";
+
 import { DashboardSidebar, StatsElement } from "@/components";
 import React, { useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa6";

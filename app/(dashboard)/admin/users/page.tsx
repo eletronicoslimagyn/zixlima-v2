@@ -1,6 +1,6 @@
-export const dynamic = 'force-dynamic';
-
 "use client";
+export const dynamic = "force-dynamic";
+
 import { CustomButton, DashboardSidebar } from "@/components";
 import apiClient from "@/lib/api";
 import { nanoid } from "nanoid";

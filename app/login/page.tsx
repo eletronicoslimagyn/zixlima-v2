@@ -1,6 +1,6 @@
-export const dynamic = 'force-dynamic';
-
 "use client";
+export const dynamic = "force-dynamic";
+
 import { CustomButton, SectionTitle } from "@/components";
 import { isValidEmailAddressFormat } from "@/lib/utils";
 import { signIn, useSession } from "next-auth/react";

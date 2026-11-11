@@ -1,16 +1,6 @@
-export const dynamic = 'force-dynamic';
-
-// *********************
-// Role of the component: Bulk upload products page for admin dashboard
-// Name of the component: BulkUpload.tsx
-// Developer: Aleksandar Kuzmanovic (modified)
-// Version: 1.0
-// Component call: <BulkUpload />
-// Input parameters: no input parameters
-// Output: bulk upload page for admin dashboard
-// *********************
-
 "use client";
+export const dynamic = "force-dynamic";
+
 import { DashboardSidebar } from "@/components";
 import BulkUploadHistory from "@/components/BulkUploadHistory";
 import React, { useState, useRef } from "react";

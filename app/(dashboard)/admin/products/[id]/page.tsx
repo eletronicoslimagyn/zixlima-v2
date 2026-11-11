@@ -1,6 +1,6 @@
-export const dynamic = 'force-dynamic';
-
 "use client";
+export const dynamic = "force-dynamic";
+
 import { CustomButton, DashboardSidebar, SectionTitle } from "@/components";
 import Image from "next/image";
 import { useRouter } from "next/navigation";

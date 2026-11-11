@@ -1,6 +1,6 @@
-export const dynamic = 'force-dynamic';
-
 "use client";
+export const dynamic = "force-dynamic";
+
 import { DashboardSidebar } from "@/components";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState, use } from "react";

@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { requireAdmin } from "@/utils/adminAuth";
 
 export default async function Layout({
