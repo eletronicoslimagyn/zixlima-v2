@@ -9,7 +9,7 @@ export { default as ProductItem } from "./ProductItem";
 export { default as ProductsSection } from "./ProductsSection";
 export { default as Newsletter } from "./Newsletter";
 export { default as Footer } from "./Footer";
-export { default as Filtros } from "./Filtros";
+export { default as Filtros } from "./Filters";
 export { default as Checkbox } from "./Checkbox";
 export { default as Range } from "./Range";
 export { default as RangeWithLabels } from "./RangeWithLabels";
