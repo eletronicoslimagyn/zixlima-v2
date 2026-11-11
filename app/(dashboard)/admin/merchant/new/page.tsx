@@ -78,7 +78,7 @@ export default function NewMerchantPage() {
         <div className="bg-white rounded-lg shadow-md p-6">
           <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-gray-700 font-medium mb-2">Name</label>
+              <label className="block text-gray-700 font-medium mb-2">Nome</label>
               <input
                 type="text"
                 name="name"
@@ -135,7 +135,7 @@ export default function NewMerchantPage() {
               />
             </div>
             <div className="md:col-span-2">
-              <label className="block text-gray-700 font-medium mb-2">Description</label>
+              <label className="block text-gray-700 font-medium mb-2">Descrição</label>
               <textarea
                 name="description"
                 value={formData.description}

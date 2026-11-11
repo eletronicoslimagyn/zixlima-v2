@@ -64,11 +64,11 @@ export default function MerchantPage() {
             <table className="w-full">
               <thead>
                 <tr className="border-b">
-                  <th className="py-3 text-left">Name</th>
+                  <th className="py-3 text-left">Nome</th>
                   <th className="py-3 text-left">Email</th>
                   <th className="py-3 text-left">Status</th>
                   <th className="py-3 text-left">Produtos</th>
-                  <th className="py-3 text-left">Actions</th>
+                  <th className="py-3 text-left">Ações</th>
                 </tr>
               </thead>
               <tbody>

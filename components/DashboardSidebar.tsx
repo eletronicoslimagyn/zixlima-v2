@@ -44,7 +44,7 @@ const DashboardSidebar = () => {
       <Link href="/admin/bulk-upload">
         <div className="flex gap-x-2 w-full hover:bg-blue-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
           <FaFileUpload className="text-2xl" />{" "}
-          <span className="font-normal">Bulk Upload</span>
+          <span className="font-normal">Upload em Massa</span>
         </div>
       </Link>
       <Link href="/admin/categories">
@@ -62,7 +62,7 @@ const DashboardSidebar = () => {
       <Link href="/admin/merchant">
         <div className="flex gap-x-2 w-full hover:bg-blue-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
           <FaStore className="text-2xl" />{" "}
-          <span className="font-normal">Merchant</span>
+          <span className="font-normal">Lojista</span>
         </div>
       </Link>
         <Link href="/admin/settings">

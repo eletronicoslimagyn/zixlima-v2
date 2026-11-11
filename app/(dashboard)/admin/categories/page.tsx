@@ -51,7 +51,7 @@ const DashboardCategory = () => {
                     <input type="checkbox" className="checkbox" />
                   </label>
                 </th>
-                <th>Name</th>
+                <th>Nome</th>
                 <th></th>
               </tr>
             </thead>
@@ -86,7 +86,7 @@ const DashboardCategory = () => {
             <tfoot>
               <tr>
                 <th></th>
-                <th>Name</th>
+                <th>Nome</th>
                 <th></th>
               </tr>
             </tfoot>
