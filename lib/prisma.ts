@@ -1,26 +1,13 @@
 import { PrismaClient } from '@prisma/client';
-import { PrismaNeon } from '@prisma/adapter-neon';
-import { Pool } from '@neondatabase/serverless';
 
-let prismaInstance: PrismaClient | null = null;
+const globalForPrisma = global as unknown as { prisma: PrismaClient | undefined };
 
-function getPrismaInstance(): PrismaClient {
-  if (!prismaInstance) {
-    // Usa a URL real se existir; senão, uma URL dummy apenas para o build não travar
-    const connectionString = process.env.DATABASE_URL || "postgresql://dummy:dummy@localhost:5432/dummy";
-    const neon = new Pool({ connectionString });
-    const adapter = new PrismaNeon(neon);
-    prismaInstance = new PrismaClient({ adapter });
-  }
-  return prismaInstance;
-}
+export const prisma =
+  globalForPrisma.prisma ??
+  new PrismaClient({
+    log: ['query'],
+  });
 
-// Proxy que adia a criação do PrismaClient até o primeiro uso real
-const prisma = new Proxy({} as PrismaClient, {
-  get: (target, prop) => {
-    const instance = getPrismaInstance();
-    return Reflect.get(instance, prop);
-  },
-});
+if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;
 
 export default prisma;
