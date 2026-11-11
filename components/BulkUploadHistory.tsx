@@ -298,7 +298,7 @@ const BulkUploadHistory = () => {
               <p className="text-2xl font-bold text-green-600">
                 {batch.successfulRecords}
               </p>
-              <p className="text-xs text-gray-500">Success</p>
+              <p className="text-xs text-gray-500">Sucesso</p>
             </div>
             <div className="bg-red-50 rounded p-3 text-center">
               <p className="text-2xl font-bold text-red-600">

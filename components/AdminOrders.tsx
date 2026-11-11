@@ -44,7 +44,7 @@ const AdminOrders = () => {
               <th>Name and country</th>
               <th>Status</th>
               <th>Subtotal</th>
-              <th>Date</th>
+              <th>Data</th>
               <th></th>
             </tr>
           </thead>
@@ -90,7 +90,7 @@ const AdminOrders = () => {
                       href={`/admin/orders/${order?.id}`}
                       className="btn btn-ghost btn-xs"
                     >
-                      details
+                      Detalhes
                     </Link>
                   </th>
                 </tr>
@@ -104,7 +104,7 @@ const AdminOrders = () => {
               <th>Name and country</th>
               <th>Status</th>
               <th>Subtotal</th>
-              <th>Date</th>
+              <th>Data</th>
               <th></th>
             </tr>
           </tfoot>

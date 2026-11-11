@@ -59,8 +59,8 @@ export const WishlistModule = () => {
               <thead>
                 <tr>
                   <th></th>
-                  <th className="text-accent-content">Image</th>
-                  <th className="text-accent-content">Name</th>
+                  <th className="text-accent-content">Imagem</th>
+                  <th className="text-accent-content">Nome</th>
                   <th className="text-accent-content">Stock Status</th>
                   <th className="text-accent-content">Action</th>
                 </tr>

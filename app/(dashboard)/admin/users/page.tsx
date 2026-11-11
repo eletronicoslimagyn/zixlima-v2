@@ -77,7 +77,7 @@ const DashboardUsers = () => {
                         href={`/admin/users/${user?.id}`}
                         className="btn btn-ghost btn-xs"
                       >
-                        details
+                        Detalhes
                       </Link>
                     </th>
                   </tr>

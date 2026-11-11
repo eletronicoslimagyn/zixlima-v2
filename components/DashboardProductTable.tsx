@@ -109,7 +109,7 @@ const DashboardProductTable = () => {
                       href={`/admin/products/${product.id}`}
                       className="btn btn-ghost btn-xs"
                     >
-                      details
+                      Detalhes
                     </Link>
                   </th>
                 </tr>
