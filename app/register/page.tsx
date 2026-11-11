@@ -1,6 +1,7 @@
-import { FaEye, FaEyeSlash } from "react-icons/fa";
 "use client";
 export const dynamic = "force-dynamic";
+
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import { CustomButton, SectionTitle } from "@/components";
 import { useSession } from "next-auth/react";
