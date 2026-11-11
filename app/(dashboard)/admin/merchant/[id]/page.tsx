@@ -260,7 +260,7 @@ const handleInputChange = (
         <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-xl font-bold mb-4">Merchant Products</h2>
           {merchant.products.length > 0 ? (
-            <table className="w-full">
+            <div className="overflow-x-auto w-full"><table className="w-full">
               <thead>
                 <tr className="border-b">
                   <th className="py-3 text-left">Title</th>
@@ -286,7 +286,7 @@ const handleInputChange = (
                   </tr>
                 ))}
               </tbody>
-            </table>
+            </table></div>
           ) : (
             <p className="text-gray-500">No products for this merchant yet.</p>
           )}

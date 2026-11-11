@@ -39,7 +39,7 @@ const DashboardUsers = () => {
           </Link>
         </div>
         <div className="xl:ml-5 w-full max-xl:mt-5 overflow-auto w-full h-[80vh]">
-          <table className="table table-md table-pin-cols">
+          <div className="overflow-x-auto w-full"><table className="table table-md table-pin-cols">
             {/* head */}
             <thead>
               <tr>
@@ -92,7 +92,7 @@ const DashboardUsers = () => {
                 <th></th>
               </tr>
             </tfoot>
-          </table>
+          </table></div>
         </div>
       </div>
     </div>

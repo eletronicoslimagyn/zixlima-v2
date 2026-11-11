@@ -61,7 +61,7 @@ export default function MerchantPage() {
           {loading ? (
             <div className="text-center py-10">Loading merchants...</div>
           ) : merchants.length > 0 ? (
-            <table className="w-full">
+            <div className="overflow-x-auto w-full"><table className="w-full">
               <thead>
                 <tr className="border-b">
                   <th className="py-3 text-left">Nome</th>
@@ -105,7 +105,7 @@ export default function MerchantPage() {
                   </tr>
                 ))}
               </tbody>
-            </table>
+            </table></div>
           ) : (
             <div className="text-center py-10">No merchants found</div>
           )}

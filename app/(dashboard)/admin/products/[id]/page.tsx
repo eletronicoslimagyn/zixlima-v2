@@ -332,7 +332,7 @@ const DashboardProductDetails = ({ params }: DashboardProductDetailsProps) => {
             onClick={updateProduct}
             className="uppercase bg-blue-500 px-10 py-5 text-lg border border-black border-gray-300 font-bold text-white shadow-sm hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2"
           >
-            Update product
+            Atualizar Produto
           </button>
           <button
             type="button"

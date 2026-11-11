@@ -327,7 +327,7 @@ const AdminSingleOrder = () => {
               }
             >
               <option value="processing">Processing</option>
-              <option value="delivered">Delivered</option>
+              <option value="delivered">Entregue</option>
               <option value="canceled">Canceled</option>
             </select>
           </label>
