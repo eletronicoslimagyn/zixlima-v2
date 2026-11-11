@@ -1,4 +1,4 @@
-import ErrorReporter from "./ErrorReporter";
+
 export const dynamic = "force-dynamic";
 
 import type { Metadata } from "next";
@@ -36,7 +36,7 @@ export default async function RootLayout({
           </Providers>
           <Footer />
         </SessionProvider>
-        <ErrorReporter />
+        
 </body>
     </html>
   );
