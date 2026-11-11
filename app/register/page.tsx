@@ -115,7 +115,7 @@ const RegisterPage = () => {
                   Name
                 </label>
                 <div className="mt-2">
-                  <input
+                  <input autoComplete="new-password"
                     id="name"
                     name="name"
                     type="text"
@@ -133,7 +133,7 @@ const RegisterPage = () => {
                   Lastname
                 </label>
                 <div className="mt-2">
-                  <input
+                  <input autoComplete="new-password"
                     id="lastname"
                     name="lastname"
                     type="text"
@@ -151,7 +151,7 @@ const RegisterPage = () => {
                   Email address
                 </label>
                 <div className="mt-2">
-                  <input
+                  <input autoComplete="new-password"
                     id="email"
                     name="email"
                     type="email"
@@ -170,7 +170,7 @@ const RegisterPage = () => {
                   Password
                 </label>
                 <div className="mt-2">
-                  <input
+                  <input autoComplete="new-password"
                     id="password"
                     name="password"
                     type="password"
@@ -189,7 +189,7 @@ const RegisterPage = () => {
                   Confirm password
                 </label>
                 <div className="mt-2">
-                  <input
+                  <input autoComplete="new-password"
                     id="confirmpassword"
                     name="confirmpassword"
                     type="password"
@@ -202,7 +202,7 @@ const RegisterPage = () => {
 
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <input
+                  <input autoComplete="new-password"
                     id="remember-me"
                     name="remember-me"
                     type="checkbox"

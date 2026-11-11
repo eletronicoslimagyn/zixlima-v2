@@ -35,3 +35,14 @@
 footer img[alt*="Singitronic"], footer img[alt*="singitronic"] {
     display: none !important;
 }
+
+/* --- REMOÇÃO FORÇADA DO SELO DA NETLIFY --- */
+body > div:last-child:not(main):not(header):not(footer), 
+.netlify-badge, 
+#netlify-badge,
+iframe[src*="netlify"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
