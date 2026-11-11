@@ -28,8 +28,8 @@ const SortBy = () => {
         <option value="defaultSort">Default</option>
         <option value="titleAsc">Sort A-Z</option>
         <option value="titleDesc">Sort Z-A</option>
-        <option value="lowPrice">Lowest Price</option>
-        <option value="highPrice">Highest Price</option>
+        <option value="lowPreço">Lowest Preço</option>
+        <option value="highPreço">Highest Preço</option>
       </select>
     </div>
   );

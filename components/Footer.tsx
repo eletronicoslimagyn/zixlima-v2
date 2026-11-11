@@ -105,7 +105,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    
+        <div className="w-full text-center mt-6 pt-6 border-t border-gray-700">
+            <p className="text-white font-semibold"><i className="fa fa-envelope mr-2"></i> Contato: suporte@zixlima.com.br</p>
+        </div>
+        
+</footer>
   );
 };
 

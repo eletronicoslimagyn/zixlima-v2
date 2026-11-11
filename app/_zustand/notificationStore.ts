@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { Notification, NotificationFilters, NotificationResponse } from '@/types/notification';
+import { Notification, NotificationFiltros, NotificationResponse } from '@/types/notification';
 
 interface NotificationState {
   notifications: Notification[];
@@ -9,7 +9,7 @@ interface NotificationState {
   totalPages: number;
   loading: boolean;
   error: string | null;
-  filters: NotificationFilters;
+  filters: NotificationFiltros;
   selectedIds: string[];
   
   // Actions
@@ -18,7 +18,7 @@ interface NotificationState {
   markAsRead: (id: string) => void;
   markAsUnread: (id: string) => void;
   deleteNotification: (id: string) => void;
-  setFilters: (filters: Partial<NotificationFilters>) => void;
+  setFiltros: (filters: Partial<NotificationFiltros>) => void;
   toggleSelection: (id: string) => void;
   selectAll: () => void;
   clearSelection: () => void;
@@ -93,9 +93,9 @@ export const useNotificationStore = create<NotificationState>((set, get) => ({
       };
     }),
 
-  setFilters: (newFilters: Partial<NotificationFilters>) =>
+  setFiltros: (newFiltros: Partial<NotificationFiltros>) =>
     set(state => ({
-      filters: { ...state.filters, ...newFilters },
+      filters: { ...state.filters, ...newFiltros },
       selectedIds: [] // Clear selection when filters change
     })),
 

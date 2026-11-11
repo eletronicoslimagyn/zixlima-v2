@@ -237,7 +237,7 @@ const CheckoutPage = () => {
         console.log(`✅ Product ${i + 1} added successfully`);
       }
 
-      console.log(" All products added successfully!");
+      console.log(" Todos os produtos added successfully!");
 
       // Clear form and cart
       setCheckoutForm({
@@ -343,7 +343,7 @@ const CheckoutPage = () => {
 
   return (
     <div className="bg-white">
-      <SectionTitle title="Checkout" path="Home | Cart | Checkout" />
+      <SectionTitle title="Checkout" path="Início | Cart | Checkout" />
       
       <div className="hidden h-full w-1/2 bg-white lg:block" aria-hidden="true" />
       <div className="hidden h-full w-1/2 bg-gray-50 lg:block" aria-hidden="true" />

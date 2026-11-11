@@ -32,7 +32,7 @@ const NotificationsPage = () => {
     fetchNotifications,
     markSelectedAsRead,
     deleteSelectedNotifications,
-    updateFilters,
+    updateFiltros,
     loadMore,
     markNotificationAsRead,
     deleteNotificationById
@@ -74,7 +74,7 @@ const NotificationsPage = () => {
   // Handle search
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    updateFilters({ 
+    updateFiltros({ 
       ...filters,
       search: searchTerm || undefined,
       page: 1
@@ -84,7 +84,7 @@ const NotificationsPage = () => {
   // Handle filter changes
   const handleTypeFilter = (type: string) => {
     setSelectedType(type);
-    updateFilters({
+    updateFiltros({
       ...filters,
       type: type === 'all' ? undefined : type as NotificationType,
       page: 1
@@ -93,7 +93,7 @@ const NotificationsPage = () => {
 
   const handleStatusFilter = (status: string) => {
     setSelectedStatus(status);
-    updateFilters({
+    updateFiltros({
       ...filters,
       isRead: status === 'all' ? undefined : status === 'read',
       page: 1
@@ -149,7 +149,7 @@ const NotificationsPage = () => {
           </p>
         </div>
 
-        {/* Filters and Search */}
+        {/* Filtros and Search */}
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-6">
           {/* Search Bar */}
           <form onSubmit={handleSearch} className="mb-4">
@@ -171,11 +171,11 @@ const NotificationsPage = () => {
             </div>
           </form>
 
-          {/* Filters */}
+          {/* Filtros */}
           <div className="flex flex-wrap gap-4 items-center">
             <div className="flex items-center space-x-2">
               <FaFilter className="text-gray-400" />
-              <span className="text-sm font-medium text-gray-700">Filters:</span>
+              <span className="text-sm font-medium text-gray-700">Filtros:</span>
             </div>
 
             {/* Type Filter */}
@@ -202,13 +202,13 @@ const NotificationsPage = () => {
               <option value="read">Read</option>
             </select>
 
-            {/* Clear Filters */}
+            {/* Clear Filtros */}
             <button
               onClick={() => {
                 setSearchTerm('');
                 setSelectedType('all');
                 setSelectedStatus('all');
-                updateFilters({ 
+                updateFiltros({ 
                   type: undefined, 
                   isRead: undefined, 
                   search: undefined, 
@@ -220,7 +220,7 @@ const NotificationsPage = () => {
               }}
               className="px-3 py-1 text-sm text-gray-600 hover:text-gray-800 underline"
             >
-              Clear Filters
+              Clear Filtros
             </button>
           </div>
         </div>

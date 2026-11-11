@@ -19,14 +19,14 @@ const Breadcrumb = () => {
         <li>
           <Link href="/">
             <FaHouse className="mr-2" />
-            Home
+            Início
           </Link>
         </li>
         <li>
-          <Link href="/shop">Shop</Link>
+          <Link href="/shop">Loja</Link>
         </li>
         <li>
-          <Link href="/shop">All products</Link>
+          <Link href="/shop">Todos os produtos</Link>
         </li>
       </ul>
     </div>

@@ -1,9 +1,9 @@
 // *********************
-// Role of the component: Filters on shop page
-// Name of the component: Filters.tsx
+// Role of the component: Filtros on shop page
+// Name of the component: Filtros.tsx
 // Developer: Aleksandar Kuzmanovic
 // Version: 1.0
-// Component call: <Filters />
+// Component call: <Filtros />
 // Input parameters: no input parameters
 // Output: stock, rating and price filter
 // *********************
@@ -22,7 +22,7 @@ interface InputCategory {
   ratingFilter: { text: string, value: number },
 }
 
-const Filters = () => {
+const Filtros = () => {
   const pathname = usePathname();
   const { replace } = useRouter();
 
@@ -51,10 +51,10 @@ const Filters = () => {
 
   return (
     <div>
-      <h3 className="text-2xl mb-2">Filters</h3>
+      <h3 className="text-2xl mb-2">Filtros</h3>
       <div className="divider"></div>
       <div className="flex flex-col gap-y-1">
-        <h3 className="text-xl mb-2">Availability</h3>
+        <h3 className="text-xl mb-2">Disponibilidade</h3>
         <div className="form-control">
           <label className="cursor-pointer flex items-center">
             <input
@@ -71,7 +71,7 @@ const Filters = () => {
               }
               className="checkbox"
             />
-            <span className="label-text text-lg ml-2 text-black">In stock</span>
+            <span className="label-text text-lg ml-2 text-black">Em estoque</span>
           </label>
         </div>
 
@@ -92,7 +92,7 @@ const Filters = () => {
               className="checkbox"
             />
             <span className="label-text text-lg ml-2 text-black">
-              Out of stock
+              Esgotado
             </span>
           </label>
         </div>
@@ -100,7 +100,7 @@ const Filters = () => {
 
       <div className="divider"></div>
       <div className="flex flex-col gap-y-1">
-        <h3 className="text-xl mb-2">Price</h3>
+        <h3 className="text-xl mb-2">Preço</h3>
         <div>
           <input
             type="range"
@@ -154,4 +154,4 @@ const Filters = () => {
   );
 };
 
-export default Filters;
+export default Filtros;

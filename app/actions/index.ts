@@ -25,12 +25,12 @@ export async function deleteWishItem(id: string){
 //       redirect("/cars?sort=oldestCars");
 //       break;
 
-//     case "lowestPriceSort":
-//       redirect("/cars?sort=lowestPrice");
+//     case "lowestPreçoSort":
+//       redirect("/cars?sort=lowestPreço");
 //       break;
 
-//     case "highPriceSort":
-//       redirect("/cars?sort=highestPrice");
+//     case "highPreçoSort":
+//       redirect("/cars?sort=highestPreço");
 //       break;
   
 //     default:
@@ -59,12 +59,12 @@ export async function deleteWishItem(id: string){
 //       sortQuery = "&sort=oldestCars";
 //       break;
 
-//     case "lowestPriceSort":
-//       sortQuery = "&sort=lowestPrice";
+//     case "lowestPreçoSort":
+//       sortQuery = "&sort=lowestPreço";
 //       break;
 
-//     case "highPriceSort":
-//       sortQuery = "&sort=highestPrice";
+//     case "highPreçoSort":
+//       sortQuery = "&sort=highestPreço";
 //       break;
   
 //     default:

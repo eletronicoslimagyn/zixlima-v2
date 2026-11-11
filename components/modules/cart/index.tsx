@@ -94,7 +94,7 @@ export const CartModule = () => {
                     />
                   )}
 
-                  <span>{1 ? "In stock" : `Ships in 3 days`}</span>
+                  <span>{1 ? "Em estoque" : `Ships in 3 days`}</span>
                 </p>
               </div>
             </li>

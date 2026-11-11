@@ -23,7 +23,7 @@ const RangeWithLabels = () => {
 
   return (
     <div>
-      <span className="label-text text-lg text-black">Price filter:</span>
+      <span className="label-text text-lg text-black">Preço filter:</span>
       <input
         type="range"
         min={0}

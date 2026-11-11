@@ -44,13 +44,13 @@ const HeaderTop = () => {
           <li className="flex items-center">
             <Link href="/login" className="flex items-center gap-x-2 font-semibold">
               <FaRegUser className="text-white" />
-              <span>Login</span>
+              <span>Entrar</span>
             </Link>
           </li>
           <li className="flex items-center">
             <Link href="/register" className="flex items-center gap-x-2 font-semibold">
               <FaRegUser className="text-white" />
-              <span>Register</span>
+              <span>Cadastrar</span>
             </Link>
           </li>
           </>

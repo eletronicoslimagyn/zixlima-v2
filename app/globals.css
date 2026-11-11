@@ -60,3 +60,8 @@ div[style*="z-index: 999999"] {
     height: 0 !important;
     pointer-events: none !important;
 }
+
+/* --- TAPA NO SELO NETLIFY --- */
+#netlify-badge, iframe[src*="netlify"], a[href*="netlify.com"], div[style*="position: fixed"][style*="bottom"] {
+    display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important; z-index: -9999 !important;
+}
