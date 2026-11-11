@@ -1,3 +1,4 @@
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 "use client";
 export const dynamic = "force-dynamic";
 
@@ -170,14 +171,19 @@ const RegisterPage = () => {
                   Password
                 </label>
                 <div className="mt-2">
-                  <input autoComplete="new-password"
+                  <div className="relative w-full">
+            <input autoComplete="new-password"
                     id="password"
                     name="password"
-                    type="password"
+                    type={showPassword ? "text" : "password"}
                     autoComplete="current-password"
                     required
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
+            <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700">
+                {showPassword ? <FaEyeSlash /> : <FaEye />}
+            </button>
+        </div>
                 </div>
               </div>
 
