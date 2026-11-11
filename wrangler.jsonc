@@ -9,7 +9,7 @@
     "binding": "ASSETS"
   },
   "vars": {
-    "DATABASE_URL": "SUA_URL_AQUI",
+    "DATABASE_URL": "postgresql://neondb_owner:npg_t2mbecUi7rEj@ep-delicate-voice-bd6cfxll-pooler.c-8.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require",
     "NEXT_PRIVATE_MINIMAL_MODE": "1"
   }
 }
