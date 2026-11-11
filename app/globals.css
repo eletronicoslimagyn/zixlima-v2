@@ -46,3 +46,17 @@ iframe[src*="netlify"] {
     opacity: 0 !important;
     pointer-events: none !important;
 }
+
+/* --- TIRO DE CANHÃO NO SELO DA NETLIFY --- */
+#netlify-badge,
+iframe[src*="netlify"],
+a[href*="netlify"],
+div[id*="netlify"],
+div[style*="z-index: 999999"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    pointer-events: none !important;
+}
