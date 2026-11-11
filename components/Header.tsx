@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { FaPesquisar, FaHeart, FaShoppingCart, FaUser, FaEnvelope } from "react-icons/fa";
+import { FaSearch, FaHeart, FaShoppingCart, FaUser, FaEnvelope } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -47,7 +47,7 @@ export default function Header() {
                 className="w-full border-2 border-blue-600 rounded-l-lg py-2 px-4 focus:outline-none text-sm"
               />
               <button className="bg-blue-600 text-white px-6 py-2 rounded-r-lg hover:bg-blue-700 transition flex items-center justify-center">
-                <FaPesquisar />
+                <FaSearch />
               </button>
             </div>
           </div>

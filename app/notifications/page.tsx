@@ -9,7 +9,7 @@ import { NotificationType } from '@/types/notification';
 import NotificationCard from '@/components/NotificationCard';
 import { useNotificationStore } from '@/app/_zustand/notificationStore';
 import { 
-  FaPesquisar, 
+  FaSearch, 
   FaFilter, 
   FaCheckCircle, 
   FaTrash, 
@@ -154,7 +154,7 @@ const NotificationsPage = () => {
           {/* Pesquisar Bar */}
           <form onSubmit={handlePesquisar} className="mb-4">
             <div className="relative">
-              <FaPesquisar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
               <input
                 type="text"
                 placeholder="Pesquisar notifications..."
