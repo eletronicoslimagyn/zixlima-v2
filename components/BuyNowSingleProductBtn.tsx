@@ -1,5 +1,5 @@
 // *********************
-// Role of the component: Buy Now button that adds product to the cart and redirects to the checkout page
+// Role of the component: Comprar Agora button that adds product to the cart and redirects to the checkout page
 // Name of the component: BuyNowSingleProductBtn.tsx
 // Developer: Aleksandar Kuzmanovic
 // Version: 1.0
@@ -38,7 +38,7 @@ const BuyNowSingleProductBtn = ({
       onClick={handleAddToCart}
       className="btn w-[200px] text-lg border border-blue-500 hover:border-blue-500 border-1 font-normal bg-blue-500 text-white hover:bg-white hover:scale-110 hover:text-blue-500 transition-all uppercase ease-in max-[500px]:w-full"
     >
-      Buy Now
+      Comprar Agora
     </button>
   );
 };

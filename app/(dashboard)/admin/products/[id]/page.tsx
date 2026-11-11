@@ -22,7 +22,7 @@ const DashboardProductDetails = ({ params }: DashboardProductDetailsProps) => {
   const id = resolvedParams.id;
 
   const [product, setProduct] = useState<Product>();
-  const [categories, setCategories] = useState<Category[]>();
+  const [categories, setCategorias] = useState<Category[]>();
   const [otherImages, setOtherImages] = useState<OtherImages[]>([]);
   const router = useRouter();
 
@@ -124,19 +124,19 @@ const DashboardProductDetails = ({ params }: DashboardProductDetailsProps) => {
   };
 
   // fetching all product categories. It will be used for displaying categories in select category input
-  const fetchCategories = async () => {
+  const fetchCategorias = async () => {
     apiClient
       .get(`/api/categories`)
       .then((res) => {
         return res.json();
       })
       .then((data) => {
-        setCategories(data);
+        setCategorias(data);
       });
   };
 
   useEffect(() => {
-    fetchCategories();
+    fetchCategorias();
     fetchProductData();
   }, [id]);
 

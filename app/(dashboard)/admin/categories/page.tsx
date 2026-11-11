@@ -9,7 +9,7 @@ import { formatCategoryName } from "../../../../utils/categoryFormating";
 import apiClient from "@/lib/api";
 
 const DashboardCategory = () => {
-  const [categories, setCategories] = useState<Category[]>([]);
+  const [categories, setCategorias] = useState<Category[]>([]);
 
   // getting all categories to be displayed on the all categories page
   useEffect(() => {
@@ -18,7 +18,7 @@ const DashboardCategory = () => {
         return res.json();
       })
       .then((data) => {
-        setCategories(data);
+        setCategorias(data);
       });
   }, []);
 
@@ -27,7 +27,7 @@ const DashboardCategory = () => {
       <DashboardSidebar />
       <div className="w-full">
         <h1 className="text-3xl font-semibold text-center mb-5">
-          All Categories
+          All Categorias
         </h1>
         <div className="flex justify-end mb-5">
           <Link href="/admin/categories/new">

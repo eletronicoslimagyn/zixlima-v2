@@ -9,7 +9,7 @@ import { NotificationType } from '@/types/notification';
 import NotificationCard from '@/components/NotificationCard';
 import { useNotificationStore } from '@/app/_zustand/notificationStore';
 import { 
-  FaSearch, 
+  FaPesquisar, 
   FaFilter, 
   FaCheckCircle, 
   FaTrash, 
@@ -40,7 +40,7 @@ const NotificationsPage = () => {
 
   const { toggleSelection, selectAll, clearSelection } = useNotificationStore();
 
-  const [searchTerm, setSearchTerm] = useState(filters.search || '');
+  const [searchTerm, setPesquisarTerm] = useState(filters.search || '');
   const [selectedType, setSelectedType] = useState<string>(filters.type || 'all');
   const [selectedStatus, setSelectedStatus] = useState<string>(
     filters.isRead === undefined ? 'all' : filters.isRead ? 'read' : 'unread'
@@ -57,7 +57,7 @@ const NotificationsPage = () => {
 
   // Sync local state with store filters
   useEffect(() => {
-    setSearchTerm(filters.search || '');
+    setPesquisarTerm(filters.search || '');
     setSelectedType(filters.type || 'all');
     setSelectedStatus(
       filters.isRead === undefined ? 'all' : filters.isRead ? 'read' : 'unread'
@@ -72,7 +72,7 @@ const NotificationsPage = () => {
   }, [session, fetchNotifications]);
 
   // Handle search
-  const handleSearch = (e: React.FormEvent) => {
+  const handlePesquisar = (e: React.FormEvent) => {
     e.preventDefault();
     updateFiltros({ 
       ...filters,
@@ -149,24 +149,24 @@ const NotificationsPage = () => {
           </p>
         </div>
 
-        {/* Filtros and Search */}
+        {/* Filtros and Pesquisar */}
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-6">
-          {/* Search Bar */}
-          <form onSubmit={handleSearch} className="mb-4">
+          {/* Pesquisar Bar */}
+          <form onSubmit={handlePesquisar} className="mb-4">
             <div className="relative">
-              <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <FaPesquisar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
               <input
                 type="text"
-                placeholder="Search notifications..."
+                placeholder="Pesquisar notifications..."
                 value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
+                onChange={(e) => setPesquisarTerm(e.target.value)}
                 className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
               />
               <button
                 type="submit"
                 className="absolute right-2 top-1/2 transform -translate-y-1/2 px-4 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1"
               >
-                Search
+                Pesquisar
               </button>
             </div>
           </form>
@@ -205,7 +205,7 @@ const NotificationsPage = () => {
             {/* Clear Filtros */}
             <button
               onClick={() => {
-                setSearchTerm('');
+                setPesquisarTerm('');
                 setSelectedType('all');
                 setSelectedStatus('all');
                 updateFiltros({ 

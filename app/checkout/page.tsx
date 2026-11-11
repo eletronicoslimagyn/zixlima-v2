@@ -10,9 +10,9 @@ import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import apiClient from "@/lib/api";
 
-const CheckoutPage = () => {
+const Finalizar CompraPage = () => {
   const { data: session } = useSession();
-  const [checkoutForm, setCheckoutForm] = useState({
+  const [checkoutForm, setFinalizar CompraForm] = useState({
     name: "",
     lastname: "",
     phone: "",
@@ -240,7 +240,7 @@ const CheckoutPage = () => {
       console.log(" Todos os produtos added successfully!");
 
       // Clear form and cart
-      setCheckoutForm({
+      setFinalizar CompraForm({
         name: "",
         lastname: "",
         phone: "",
@@ -343,7 +343,7 @@ const CheckoutPage = () => {
 
   return (
     <div className="bg-white">
-      <SectionTitle title="Checkout" path="Início | Cart | Checkout" />
+      <SectionTitle title="Finalizar Compra" path="Início | Cart | Finalizar Compra" />
       
       <div className="hidden h-full w-1/2 bg-white lg:block" aria-hidden="true" />
       <div className="hidden h-full w-1/2 bg-gray-50 lg:block" aria-hidden="true" />
@@ -430,7 +430,7 @@ const CheckoutPage = () => {
                   <input
                     value={checkoutForm.name}
                     onChange={(e) =>
-                      setCheckoutForm({
+                      setFinalizar CompraForm({
                         ...checkoutForm,
                         name: e.target.value,
                       })
@@ -457,7 +457,7 @@ const CheckoutPage = () => {
                   <input
                     value={checkoutForm.lastname}
                     onChange={(e) =>
-                      setCheckoutForm({
+                      setFinalizar CompraForm({
                         ...checkoutForm,
                         lastname: e.target.value,
                       })
@@ -484,7 +484,7 @@ const CheckoutPage = () => {
                   <input
                     value={checkoutForm.phone}
                     onChange={(e) =>
-                      setCheckoutForm({
+                      setFinalizar CompraForm({
                         ...checkoutForm,
                         phone: e.target.value,
                       })
@@ -511,7 +511,7 @@ const CheckoutPage = () => {
                   <input
                     value={checkoutForm.email}
                     onChange={(e) =>
-                      setCheckoutForm({
+                      setFinalizar CompraForm({
                         ...checkoutForm,
                         email: e.target.value,
                       })
@@ -576,7 +576,7 @@ const CheckoutPage = () => {
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                       value={checkoutForm.company}
                       onChange={(e) =>
-                        setCheckoutForm({
+                        setFinalizar CompraForm({
                           ...checkoutForm,
                           company: e.target.value,
                         })
@@ -603,7 +603,7 @@ const CheckoutPage = () => {
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                       value={checkoutForm.adress}
                       onChange={(e) =>
-                        setCheckoutForm({
+                        setFinalizar CompraForm({
                           ...checkoutForm,
                           adress: e.target.value,
                         })
@@ -629,7 +629,7 @@ const CheckoutPage = () => {
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                       value={checkoutForm.apartment}
                       onChange={(e) =>
-                        setCheckoutForm({
+                        setFinalizar CompraForm({
                           ...checkoutForm,
                           apartment: e.target.value,
                         })
@@ -656,7 +656,7 @@ const CheckoutPage = () => {
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                       value={checkoutForm.city}
                       onChange={(e) =>
-                        setCheckoutForm({
+                        setFinalizar CompraForm({
                           ...checkoutForm,
                           city: e.target.value,
                         })
@@ -683,7 +683,7 @@ const CheckoutPage = () => {
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                       value={checkoutForm.country}
                       onChange={(e) =>
-                        setCheckoutForm({
+                        setFinalizar CompraForm({
                           ...checkoutForm,
                           country: e.target.value,
                         })
@@ -710,7 +710,7 @@ const CheckoutPage = () => {
                       className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm disabled:bg-gray-100 disabled:cursor-not-allowed"
                       value={checkoutForm.postalCode}
                       onChange={(e) =>
-                        setCheckoutForm({
+                        setFinalizar CompraForm({
                           ...checkoutForm,
                           postalCode: e.target.value,
                         })
@@ -735,7 +735,7 @@ const CheckoutPage = () => {
                       disabled={isSubmitting}
                       value={checkoutForm.orderNotice}
                       onChange={(e) =>
-                        setCheckoutForm({
+                        setFinalizar CompraForm({
                           ...checkoutForm,
                           orderNotice: e.target.value,
                         })
@@ -763,4 +763,4 @@ const CheckoutPage = () => {
   );
 };
 
-export default CheckoutPage;
+export default Finalizar CompraPage;

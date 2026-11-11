@@ -26,7 +26,7 @@ const improveCategoryText = (text: string): string => {
 const ShopPage = async ({ params, searchParams }: { params: Promise<{ slug?: string[] }>, searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) => {
   // Await both params and searchParams
   const awaitedParams = await params;
-  const awaitedSearchParams = await searchParams;
+  const awaitedPesquisarParams = await searchParams;
   
   return (
     <div className="text-black bg-white">
@@ -45,7 +45,7 @@ const ShopPage = async ({ params, searchParams }: { params: Promise<{ slug?: str
               <SortBy />
             </div>
             <div className="divider"></div>
-            <Products params={awaitedParams} searchParams={awaitedSearchParams} />
+            <Products params={awaitedParams} searchParams={awaitedPesquisarParams} />
             <Pagination />
           </div>
         </div>

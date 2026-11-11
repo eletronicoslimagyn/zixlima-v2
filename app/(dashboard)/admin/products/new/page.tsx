@@ -31,7 +31,7 @@ const AddNewProduct = () => {
     slug: "",
     categoryId: "",
   });
-  const [categories, setCategories] = useState<Category[]>([]);
+  const [categories, setCategorias] = useState<Category[]>([]);
   const [merchants, setMerchants] = useState<Merchant[]>([]);
   const addProduct = async () => {
     if (
@@ -114,14 +114,14 @@ const AddNewProduct = () => {
     }
   };
 
-  const fetchCategories = async () => {
+  const fetchCategorias = async () => {
     apiClient
       .get(`/api/categories`)
       .then((res) => {
         return res.json();
       })
       .then((data) => {
-        setCategories(data);
+        setCategorias(data);
         setProduct({
           merchantId: product.merchantId || "",
           title: "",
@@ -137,7 +137,7 @@ const AddNewProduct = () => {
   };
 
   useEffect(() => {
-    fetchCategories();
+    fetchCategorias();
     fetchMerchants();
   }, []);
 

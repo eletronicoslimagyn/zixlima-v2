@@ -4,14 +4,14 @@ export const dynamic = "force-dynamic";
 import { CustomButton, SectionTitle } from "@/components";
 import { isValidEmailAddressFormat } from "@/lib/utils";
 import { signIn, useSession } from "next-auth/react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter, usePesquisarParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { FcGoogle } from "react-icons/fc";
 
 const LoginPage = () => {
   const router = useRouter();
-  const searchParams = useSearchParams();
+  const searchParams = usePesquisarParams();
   const [error, setError] = useState("");
   const { data: session, status: sessionStatus } = useSession();
 

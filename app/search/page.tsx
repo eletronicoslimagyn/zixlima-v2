@@ -10,7 +10,7 @@ interface Props {
 }
 
 // sending api request for search results for a given search text
-const SearchPage = async ({ searchParams }: Props) => {
+const PesquisarPage = async ({ searchParams }: Props) => {
   const sp = await searchParams;
   let products = [];
 
@@ -33,7 +33,7 @@ const SearchPage = async ({ searchParams }: Props) => {
 
   return (
     <div>
-      <SectionTitle title="Search Page" path="Início | Search" />
+      <SectionTitle title="Pesquisar Page" path="Início | Pesquisar" />
       <div className="max-w-screen-2xl mx-auto">
         {sp?.search && (
           <h3 className="text-4xl text-center py-10 max-sm:text-3xl">
@@ -56,7 +56,7 @@ const SearchPage = async ({ searchParams }: Props) => {
   );
 };
 
-export default SearchPage;
+export default PesquisarPage;
 
 /*
 
