@@ -1,4 +1,4 @@
-import authOptions from "../../../lib/authOptions";
+import authOptions from "../../../../lib/authOptions";
 import NextAuth, { NextAuthOptions } from "next-auth";
 import { Account, User as AuthUser } from "next-auth";
 import GithubProvider from "next-auth/providers/github";
