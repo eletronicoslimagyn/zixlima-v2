@@ -3,5 +3,8 @@
   "name": "zixlima-v2",
   "main": ".open-next/worker.js",
   "compatibility_date": "2024-09-23",
-  "compatibility_flags": ["nodejs_compat"]
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "DATABASE_URL": "postgresql://neondb_owner:npg_t2mbecUi7rEj@ep-delicate-voice-bd6cfxll-pooler.c-8.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=requirep01"
+  }
 }
