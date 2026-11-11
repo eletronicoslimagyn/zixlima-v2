@@ -1,0 +1,11 @@
+=== RELATÓRIO DA VARREDURA SUPREMA 1000X ===
+Arquivos analisados: 106
+
+Total de alertas: 6
+
+🔗 Link inseguro (http://) em app/WhatsAppButton.tsx
+⚠️ Texto em inglês: 'Total' em app/checkout/page.tsx
+⚠️ Texto em inglês: 'Subtotal' em app/checkout/page.tsx
+⚠️ Texto em inglês: 'Subtotal' em components/AdminOrders.tsx
+⚠️ Texto em inglês: 'Total' em components/BulkUploadHistory.tsx
+⚠️ Texto em inglês: 'Subtotal' em components/modules/cart/index.tsx
