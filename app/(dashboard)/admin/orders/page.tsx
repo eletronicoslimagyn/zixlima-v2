@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 "use client";
 import { AdminOrders, DashboardSidebar } from "@/components";
 import React from "react";

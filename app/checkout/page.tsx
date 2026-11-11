@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 "use client";
 import { SectionTitle } from "@/components";
 import { useProductStore } from "../_zustand/store";

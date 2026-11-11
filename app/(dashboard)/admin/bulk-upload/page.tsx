@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 // *********************
 // Role of the component: Bulk upload products page for admin dashboard
 // Name of the component: BulkUpload.tsx

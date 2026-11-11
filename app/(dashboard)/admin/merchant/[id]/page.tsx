@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 "use client";
 import React, { useEffect, useState, use } from "react";
 import DashboardSidebar from "@/components/DashboardSidebar";

@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 "use client";
 import { CustomButton, DashboardSidebar } from "@/components";
 import apiClient from "@/lib/api";

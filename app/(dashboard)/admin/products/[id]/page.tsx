@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 "use client";
 import { CustomButton, DashboardSidebar, SectionTitle } from "@/components";
 import Image from "next/image";

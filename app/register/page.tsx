@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 "use client";
 import { CustomButton, SectionTitle } from "@/components";
 import { useSession } from "next-auth/react";
