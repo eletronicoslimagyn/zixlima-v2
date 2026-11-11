@@ -25,9 +25,9 @@ const SortBy = () => {
         className="select border-gray-400 py-2 px-2 text-base border-2 select-bordered w-40 focus:outline-none outline-none max-lg:w-full bg-white"
         name="sort"
       >
-        <option value="defaultSort">Default</option>
-        <option value="titleAsc">Sort A-Z</option>
-        <option value="titleDesc">Sort Z-A</option>
+        <option value="defaultSort">Padrão</option>
+        <option value="titleAsc">Ordenar A-Z</option>
+        <option value="titleDesc">Ordenar Z-A</option>
         <option value="lowPreço">Lowest Preço</option>
         <option value="highPreço">Highest Preço</option>
       </select>

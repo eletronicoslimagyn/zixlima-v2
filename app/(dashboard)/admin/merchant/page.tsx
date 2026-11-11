@@ -67,7 +67,7 @@ export default function MerchantPage() {
                   <th className="py-3 text-left">Name</th>
                   <th className="py-3 text-left">Email</th>
                   <th className="py-3 text-left">Status</th>
-                  <th className="py-3 text-left">Products</th>
+                  <th className="py-3 text-left">Produtos</th>
                   <th className="py-3 text-left">Actions</th>
                 </tr>
               </thead>

@@ -26,19 +26,19 @@ const DashboardSidebar = () => {
       <Link href="/admin">
         <div className="flex gap-x-2 w-full hover:bg-blue-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
           <MdDashboard className="text-2xl" />{" "}
-          <span className="font-normal">Dashboard</span>
+          <span className="font-normal">Painel</span>
         </div>
       </Link>
       <Link href="/admin/orders">
         <div className="flex gap-x-2 w-full hover:bg-blue-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
           <FaBagShopping className="text-2xl" />{" "}
-          <span className="font-normal">Orders</span>
+          <span className="font-normal">Pedidos</span>
         </div>
       </Link>
       <Link href="/admin/products">
         <div className="flex gap-x-2 w-full hover:bg-blue-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
           <FaTable className="text-2xl" />{" "}
-          <span className="font-normal">Products</span>
+          <span className="font-normal">Produtos</span>
         </div>
       </Link>
       <Link href="/admin/bulk-upload">
@@ -56,7 +56,7 @@ const DashboardSidebar = () => {
       <Link href="/admin/users">
         <div className="flex gap-x-2 w-full hover:bg-blue-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
           <FaRegUser className="text-2xl" />{" "}
-          <span className="font-normal">Users</span>
+          <span className="font-normal">Usuários</span>
         </div>
       </Link>
       <Link href="/admin/merchant">
@@ -68,7 +68,7 @@ const DashboardSidebar = () => {
         <Link href="/admin/settings">
             <div className="flex gap-x-2 w-full hover:bg-blue-600 cursor-pointer items-center py-6 pl-5 text-xl text-white">
                 <FaGear className="text-2xl" />{" "}
-                <span className="font-normal">Settings</span>
+                <span className="font-normal">Configurações</span>
             </div>
         </Link>
     </div>

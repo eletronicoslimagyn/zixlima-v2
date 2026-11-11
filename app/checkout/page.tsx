@@ -343,7 +343,7 @@ const CheckoutPage = () => {
 
   return (
     <div className="bg-white">
-      <SectionTitle title="Checkout" path="Início | Cart | Checkout" />
+      <SectionTitle title="Finalizar Compra" path="Início | Cart | Checkout" />
       
       <div className="hidden h-full w-1/2 bg-white lg:block" aria-hidden="true" />
       <div className="hidden h-full w-1/2 bg-gray-50 lg:block" aria-hidden="true" />
@@ -391,7 +391,7 @@ const CheckoutPage = () => {
                 <dd>${total}</dd>
               </div>
               <div className="flex items-center justify-between">
-                <dt className="text-gray-600">Shipping</dt>
+                <dt className="text-gray-600">Frete</dt>
                 <dd>$5</dd>
               </div>
               <div className="flex items-center justify-between">

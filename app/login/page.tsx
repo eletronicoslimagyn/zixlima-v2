@@ -68,7 +68,7 @@ const LoginPage = () => {
   }
   return (
     <div className="bg-white">
-      <SectionTitle title="Login" path="Início | Login" />
+      <SectionTitle title="Entrar" path="Início | Login" />
       <div className="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8 bg-white">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <h2 className="mt-6 text-center text-2xl font-normal leading-9 tracking-tight text-gray-900">

@@ -265,7 +265,7 @@ const handleInputChange = (
                 <tr className="border-b">
                   <th className="py-3 text-left">Title</th>
                   <th className="py-3 text-left">Preço</th>
-                  <th className="py-3 text-left">In Stock</th>
+                  <th className="py-3 text-left">Em estoque</th>
                   <th className="py-3 text-left">Actions</th>
                 </tr>
               </thead>
