@@ -23,3 +23,15 @@
       ),
       linear-gradient(-45deg, white 50%, #3B82F6 50.99%);
 }
+/* --- HACK ZIXLIMA: Esconde o selo da Netlify no plano free --- */
+#netlify-badge, .netlify-badge, a[href*="netlify.com"], iframe[src*="netlify.com"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* --- Corrige o fundo do rodapé se estiver com logo antiga --- */
+footer img[alt*="Singitronic"], footer img[alt*="singitronic"] {
+    display: none !important;
+}
