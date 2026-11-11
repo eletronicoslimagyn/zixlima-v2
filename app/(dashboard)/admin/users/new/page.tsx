@@ -75,7 +75,7 @@ const DashboardCreateNewUser = () => {
     <div className="bg-white flex justify-start max-w-screen-2xl mx-auto xl:h-full max-xl:flex-col max-xl:gap-y-5">
       <DashboardSidebar />
       <div className="flex flex-col gap-y-7 xl:pl-5 max-xl:px-5 w-full">
-        <h1 className="text-3xl font-semibold">Add new user</h1>
+        <h1 className="text-3xl font-semibold">Adicionar Novo Usuário</h1>
         <div>
           <label className="form-control w-full max-w-xs">
             <div className="label">
@@ -120,8 +120,8 @@ const DashboardCreateNewUser = () => {
                 setUserInput({ ...userInput, role: e.target.value })
               }
             >
-              <option value="admin">admin</option>
-              <option value="user">user</option>
+              <option value="admin">Administrador</option>
+              <option value="user">Usuário</option>
             </select>
           </label>
         </div>

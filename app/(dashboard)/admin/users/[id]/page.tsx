@@ -151,8 +151,8 @@ const DashboardSingleUserPage = ({ params }: DashboardUserDetailsProps) => {
                 setUserInput({ ...userInput, role: e.target.value })
               }
             >
-              <option value="admin">admin</option>
-              <option value="user">user</option>
+              <option value="admin">Administrador</option>
+              <option value="user">Usuário</option>
             </select>
           </label>
         </div>

@@ -48,8 +48,8 @@ const DashboardUsers = () => {
                     <input type="checkbox" className="checkbox" />
                   </label>
                 </th>
-                <th>Email</th>
-                <th>Role</th>
+                <th>E-mail</th>
+                <th>Função</th>
                 <th></th>
               </tr>
             </thead>
@@ -87,8 +87,8 @@ const DashboardUsers = () => {
             <tfoot>
               <tr>
                 <th></th>
-                <th>Email</th>
-                <th>Role</th>
+                <th>E-mail</th>
+                <th>Função</th>
                 <th></th>
               </tr>
             </tfoot>

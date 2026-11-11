@@ -144,7 +144,7 @@ const DashboardProductDetails = ({ params }: DashboardProductDetailsProps) => {
     <div className="bg-white flex justify-start max-w-screen-2xl mx-auto xl:h-full max-xl:flex-col max-xl:gap-y-5">
       <DashboardSidebar />
       <div className="flex flex-col gap-y-7 xl:ml-5 w-full max-xl:px-5">
-        <h1 className="text-3xl font-semibold">Product details</h1>
+        <h1 className="text-3xl font-semibold">Detalhes do Produto</h1>
         {/* Product name input div - start */}
         
         <div>
@@ -235,8 +235,8 @@ const DashboardProductDetails = ({ params }: DashboardProductDetailsProps) => {
                 setProduct({ ...product!, inStock: Number(e.target.value) });
               }}
             >
-              <option value={1}>Yes</option>
-              <option value={0}>No</option>
+              <option value={1}>Sim</option>
+              <option value={0}>Não</option>
             </select>
           </label>
         </div>

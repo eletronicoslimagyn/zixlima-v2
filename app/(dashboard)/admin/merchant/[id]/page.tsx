@@ -196,7 +196,7 @@ const handleInputChange = (
               />
             </div>
             <div>
-              <label className="block text-gray-700 font-medium mb-2">Email</label>
+              <label className="block text-gray-700 font-medium mb-2">E-mail</label>
               <input
                 type="email"
                 name="email"
