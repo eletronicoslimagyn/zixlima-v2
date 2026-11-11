@@ -56,7 +56,7 @@ const DashboardProductTable = () => {
                   <input type="checkbox" className="checkbox" />
                 </label>
               </th>
-              <th>Product</th>
+              <th>Produto</th>
               <th>Stock Disponibilidade</th>
               <th>Preço</th>
               <th></th>
@@ -119,7 +119,7 @@ const DashboardProductTable = () => {
           <tfoot>
             <tr>
               <th></th>
-              <th>Product</th>
+              <th>Produto</th>
               <th>Stock Disponibilidade</th>
               <th>Preço</th>
               <th></th>

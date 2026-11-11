@@ -29,7 +29,7 @@ const ProductTabs = ({ product }: { product: Product }) => {
           }`}
           onClick={() => setCurrentProductTab(0)}
         >
-          Description
+          Descrição
         </a>
         <a
           role="tab"

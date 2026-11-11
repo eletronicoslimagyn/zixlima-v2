@@ -351,7 +351,7 @@ Another Product,149.99,Another Manufacturer,5,https://example.com/image2.jpg,Ano
                     Type
                   </th>
                   <th className="border border-gray-300 px-4 py-2 text-left">
-                    Description
+                    Descrição
                   </th>
                 </tr>
               </thead>
@@ -368,7 +368,7 @@ Another Product,149.99,Another Manufacturer,5,https://example.com/image2.jpg,Ano
                 </tr>
                 <tr>
                   <td className="border border-gray-300 px-4 py-2 font-mono">
-                    price
+                    Preço
                   </td>
                   <td className="border border-gray-300 px-4 py-2">✅ Yes</td>
                   <td className="border border-gray-300 px-4 py-2">Number</td>
@@ -408,7 +408,7 @@ Another Product,149.99,Another Manufacturer,5,https://example.com/image2.jpg,Ano
                 </tr>
                 <tr>
                   <td className="border border-gray-300 px-4 py-2 font-mono">
-                    description
+                    Descrição
                   </td>
                   <td className="border border-gray-300 px-4 py-2">✅ Yes</td>
                   <td className="border border-gray-300 px-4 py-2">String</td>

@@ -99,7 +99,7 @@ export default function MerchantPage() {
                         href={`/admin/merchant/${merchant.id}`}
                         className="text-blue-500 hover:underline"
                       >
-                        Edit
+                        Editar
                       </Link>
                     </td>
                   </tr>

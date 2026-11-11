@@ -171,7 +171,7 @@ const NotificationCard: React.FC<NotificationCardProps> = ({
                 aria-label="Delete notification"
               >
                 <FaTrash className="w-3 h-3 mr-1" />
-                Delete
+                Excluir
               </button>
             </div>
           </div>

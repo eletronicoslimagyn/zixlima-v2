@@ -245,7 +245,7 @@ const NotificationsPage = () => {
                   className="inline-flex items-center px-3 py-1 text-sm font-medium text-red-600 bg-white border border-red-300 rounded-md hover:bg-red-50 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1"
                 >
                   <FaTrash className="w-4 h-4 mr-1" />
-                  Delete
+                  Excluir
                 </button>
               </div>
             </div>

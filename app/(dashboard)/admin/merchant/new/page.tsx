@@ -71,7 +71,7 @@ export default function NewMerchantPage() {
             href="/admin/merchant"
             className="bg-gray-500 text-white px-6 py-2 rounded-md hover:bg-gray-600 transition"
           >
-            Cancel
+            Cancelar
           </Link>
         </div>
 
