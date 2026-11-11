@@ -10,7 +10,7 @@
 
 "use client";
 import React, { useEffect, useState } from "react";
-import { usePathname, usePesquisarParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { useSortStore } from "@/app/_zustand/sortStore";
 import { usePaginationStore } from "@/app/_zustand/paginationStore";
@@ -38,7 +38,7 @@ const Filtros = () => {
   const { sortBy } = useSortStore();
 
   useEffect(() => {
-    const params = new URLPesquisarParams();
+    const params = new URLSearchParams();
     // setting URL params and after that putting them all in URL
     params.set("outOfStock", inputCategory.outOfStock.isChecked.toString());
     params.set("inStock", inputCategory.inStock.isChecked.toString());
