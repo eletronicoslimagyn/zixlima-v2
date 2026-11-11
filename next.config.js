@@ -16,3 +16,4 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+// trigger build Wed Nov 11 13:00:47 -03 2026
